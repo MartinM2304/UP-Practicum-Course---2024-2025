@@ -195,5 +195,5 @@ Even // (a1 = 1.5, a2 = 2.25, 2 is even)
 
 ```c++
 3578 // Bulls: 4 Cows: 0
-		// Congratulations! You guessed the secret code!
+	// Congratulations! You guessed the secret code: 3578
 ```
