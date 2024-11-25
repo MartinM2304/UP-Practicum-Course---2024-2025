@@ -51,21 +51,27 @@ void findSandClocks(const int mtx[][MAX_SIZE], size_t rows, size_t cols,
 	size_t& centerX, size_t& centerY, int& maximumSummation)
 {
 	size_t outset = CLOCK_SIZE / 2;
-	size_t start = outset;
-	size_t end = rows - outset;
 
-	for (size_t i = start; i < end; i++)
+	size_t startX = outset, endX = rows - outset;
+	size_t startY = outset, endY = cols - outset;
+
+	while (startX < endX && startY < endY)
 	{
-		for (size_t j = start; j < end; j++)
-		{
-			int sum = calculateSandClockSummation(mtx, j - outset, j + outset, i - outset, i + outset);
+		int sum = calculateSandClockSummation(mtx, startX - outset, startX + outset, startY - outset, startY + outset);
 
-			if (sum > maximumSummation)
-			{
-				maximumSummation = sum;
-				centerX = j;
-				centerY = i;
-			}
+		if (sum > maximumSummation)
+		{
+			maximumSummation = sum;
+			centerX = startX;
+			centerY = startY;
+		}
+
+		startX++;
+
+		if (startX == endX)
+		{
+			startX = 0;
+			startY++;
 		}
 	}
 }
