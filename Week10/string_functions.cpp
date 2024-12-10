@@ -14,7 +14,7 @@ void myStrCpy(char* dest, const char* src)
 	while (*dest++ = *src++);
 }
 
-void myStrcat(char* first, const char* second)
+void myStrCat(char* first, const char* second)
 {
 	if (!first || !second) return;
 
