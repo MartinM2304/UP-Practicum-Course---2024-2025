@@ -12,9 +12,9 @@
 
 **Задача 4:** Напишете функция `int myStrCmp(const char* first, const char* second)`, която сравнява два символни низа по лексикографска наредба
 
-**Задача 5:** Напишете функция `unsigned int atoi(const char* str)`, която преобръща символен низ в число
+**Задача 5:** Напишете функция `unsigned int stringToNumber(const char* str)`, която преобръща символен низ в число
 
-**Задача 6:** Напишете функция `unsigned int getCharOccurencesCount(const char* str, char ch)`, която връща колко пъти се среща дадения символ в символния низ
+**Задача 6:** Напишете функция `unsigned int getSymbolOccurrences(const char* str, char symbol)`, която връща колко пъти се среща дадения символ в символния низ
 
 **Задача 7:** Напишете функция `bool isPrefix(const char* pattern, const char* text)`, която проверява дали първият низ е префикс на втория
 
